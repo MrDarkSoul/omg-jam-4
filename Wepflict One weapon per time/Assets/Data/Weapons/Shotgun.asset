@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b9f6d724717714db2ecfcd7c4a1582, type: 3}
+  m_Name: Shotgun
+  m_EditorClassIdentifier: 
+  name: Shotgun
+  icon: {fileID: 0}
+  model: {fileID: 2300000, guid: 666241b12dd362446aa740db60d2fefd, type: 3}
+  shootType: 2
+  damage:
+    baseValue: 12
+    cap: 24
+  accuracy:
+    baseValue: 60
+    cap: 90
+  bulletsPerShot:
+    baseValue: 6
+    cap: 12
+  maxDistance:
+    baseValue: 5
+    cap: 10
+  rateOfFire: 1.1

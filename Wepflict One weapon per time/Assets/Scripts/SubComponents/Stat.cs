@@ -1,8 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
+[System.Serializable]
 public class Stat
 {
+
+    [SerializeField]
     private float baseValue;
     public float BaseValue
     {
@@ -12,16 +16,24 @@ public class Stat
         }
         set
         {
-            baseValue = value < 1.0f ? 1.0f : value;
+            this.baseValue = value < 0 ? 0 : value;
         }
     }
     public float TotalValue
     {
         get
         {
-            return BaseValue + modifiers.Sum();
+            float value = BaseValue + modifiers.Sum();
+
+            if (cap > 0 & value > cap)
+            {
+                return (float)cap;
+            }
+
+            return value;
         }
     }
+    public float cap;
 
     private List<int> modifiers;
     

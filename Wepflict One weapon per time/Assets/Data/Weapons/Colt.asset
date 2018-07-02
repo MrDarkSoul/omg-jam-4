@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b9f6d724717714db2ecfcd7c4a1582, type: 3}
+  m_Name: Colt
+  m_EditorClassIdentifier: 
+  name: Colt
+  icon: {fileID: 0}
+  model: {fileID: 2300000, guid: 8ce6a791c09d58f4eaee27f918337a0c, type: 3}
+  shootType: 3
+  damage:
+    baseValue: 35
+    cap: 70
+  accuracy:
+    baseValue: 75
+    cap: 100
+  bulletsPerShot:
+    baseValue: 1
+    cap: 2
+  maxDistance:
+    baseValue: 5
+    cap: 8
+  rateOfFire: 0.85
